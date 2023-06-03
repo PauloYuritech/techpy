@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu E-commerce</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>TechPy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+           <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!--LOGO-->
+    <div>
+      <img src="img/logo-py_2.png">
+    </div>
+    <!--INPUT DE BUSCA-->
+    <div class="header-search">
+        <form>
+          <select class="input-select">
+            <option value="0">Categoria</option>
+            <option value="1">Eletronico</option>
+            <option value="1">Jogos</option>
+          </select>
+          <input class="input" placeholder="Buscar">
+          <button class="search-btn">Buscar</button>
+        </form>
+    </div>
+    <!--CARRINHO-->
+    <div class="uk-flex header-ctn">
+      <div>
+        <a href="#">
+          <i uk-icon="heart"></i>
+          <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sua lista de desejos</font></font></span>
+          <div class="qty"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <i uk-icon="cart"></i>
+          <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Carrinho</font></font></span>
+          <div class="qty"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+      </a>
+      </div>
+      <div>
+        <a href="" uk-tooltip="Minha Conta" ><span uk-icon="user"></span></a>
+      </div>    
+    </div>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <div class="uk-container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Ofertas</a></li>
+      </ul>
+    </div>
+      
+  </nav>
+
+  <!--PRODUTOS PRINCIPAIS-->
+  <section class="uk-container uk-margin-large-top" >
+    <div uk-grid class="uk-grid-medium uk-child-width-expand@s">
+      <div class="shop">
+        <div class="shop-img">
+          <img src="img/notebook.png" alt="">
+        </div>
+        <div class="shop-body">
+          <h3>Coleção<br>de Notebook</h3>
+          <a href="#" class="cta-btn">Compre Agora <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <div class="shop">
+        <div class="shop-img">
+          <img src="img/smartphone.png" alt="">
+        </div>
+        <div class="shop-body">
+          <h3>Coleção<br>de Celulares</h3>
+          <a href="#" class="cta-btn">Compre Agora <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+      </div>
+      <div class="shop">
+        <div class="shop-img">
+          <img src="img/fone2.png" alt="">
+        </div>
+        <div class="shop-body">
+          <h3>Coleção<br>de Fones</h3>
+          <a href="#" class="cta-btn">Compre agora <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="uk-container uk-margin-xlarge-top uk-margin-medium-bottom">
+    <div class="uk-flex uk-flex-between@l">
+      <div>
+        <h2>Outros Produtos</h2>
+      </div>
+      <div>
+        <a class="links">Cameras</a>
+        <a class="links">Monitores</a>
+        <a class="links">Jogos</a>
+        <a class="links">Acessorios</a>
+      </div>
+    </div>
+
+<!--OUTROS PRODUTOS-->
+
+ </section>
+
+  <section  id="outrosProdutos" class="uk-container">
+    <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 2000; pause-on-hover: true;">
+
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+  
+          <ul class="uk-slider-items uk-child-width-1-4@s uk-grid">
+              <li>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <img src="img/monitor.apple.jpg" width="1800" height="1200" alt="">
+                      </div>
+                      <div class="uk-card-body uk-text-center">
+                          <h3 class="uk-card-title">Apple Display</h3>
+                          <p>R$ 14.599,00</p>
+                          <div class="product-rating">
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                        </div>
+                        <div class="product-btns">
+                          <button class="add-to-wishlist" tabindex="0"><i uk-icon="heart"></i><span class="tooltipp">Adicioar aos favoritos</span></button>
+                      </div>
+                      <div class="product-btns">
+                        <a class="primary-btn cta-btn" href="#">Comprar</a>
+                    </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <img src="img/fone2.png" width="1800" height="1200" alt="">
+                      </div>
+                      <div class="uk-card-body uk-text-center">
+                          <h3 class="uk-card-title">Fone Logitech</h3>
+                          <p>R$ 199,99</p>
+                          <div class="product-rating">
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>                            
+                      </div>
+                      <div class="product-btns">
+                        <button class="add-to-wishlist" tabindex="0"><i uk-icon="heart"></i><span class="tooltipp">Adicioar aos favoritos</span></button>
+                    </div>
+                    <div class="product-btns">
+                      <a class="primary-btn cta-btn" href="#">Comprar</a>
+                  </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <img src="img/PS5.webp" width="1800" height="1200" alt="">
+                      </div>
+                      <div class="uk-card-body uk-text-center">
+                          <h3 class="uk-card-title">PS5</h3>
+                          <p>R$ 4.099,99 </p>
+                          <div class="product-rating">
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                      </div>
+                      <div class="product-btns">
+                        <button class="add-to-wishlist" tabindex="0"><i uk-icon="heart"></i><span class="tooltipp">Adicioar aos favoritos</span></button>
+                    </div>
+                    <div class="product-btns">
+                      <a class="primary-btn cta-btn" href="#">Comprar</a>
+                  </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <img src="img/pc.jpg" width="1800" height="1200" alt="">
+                      </div>
+                      <div class="uk-card-body uk-text-center">
+                          <h3 class="uk-card-title">PC Gamer</h3>
+                          <p>R$ 5.049,99</p>
+                          <div class="product-rating">
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                      </div>
+                      <div class="product-btns">
+                        <button class="add-to-wishlist" tabindex="0"><i uk-icon="heart"></i><span class="tooltipp">Adicioar aos favoritos</span></button>
+                      </div>
+                    <div class="product-btns">
+                      <a class="primary-btn cta-btn" href="#">Comprar</a>
+                  </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <img src="img/teclado.jpg" width="1800" height="1200" alt="">
+                      </div>
+                      <div class="uk-card-body uk-text-center">
+                          <h3 class="uk-card-title">Teclado</h3>
+                          <p>R$ 499,99</p>
+                          <div class="product-rating">
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                            <span uk-icon="star"></span>
+                      </div>
+                      <div class="product-btns">
+                        <button class="add-to-wishlist" tabindex="0"><i uk-icon="heart"></i><span class="tooltipp">Adicioar aos favoritos</span></button>
+                    </div>
+                    <div class="product-btns">
+                        <a class="primary-btn cta-btn" href="#">Comprar</a>
+                    </div>
+                  </div>
+              </li>
+          </ul>
+  
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+  
+      </div>
+  
+      <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+  
+  </div>
+  </section>
+
+<!-- BANNER OFERTAS -->
+
+<section id="hot-deal">
+
+  <div class="hot-deal">
+      <ul class="hot-deal-countdown">
+          <li>
+              <div>
+                  <h3>02</h3>
+                  <span>Dias</span>
+              </div>
+          </li>
+          <li>
+              <div>
+                  <h3>10</h3>
+                  <span>Horas</span>
+              </div>
+          </li>
+          <li>
+              <div>
+                  <h3>34</h3>
+                  <span>Minutos</span>
+              </div>
+          </li>
+          <li>
+              <div>
+                  <h3>60</h3>
+                  <span>Segundos</span>
+              </div>
+          </li>
+      </ul>
+      <h2 class="text-uppercase">Super promoção</h2>
+      <p>nova coleção com até 50% OFF</p>
+      <a class="primary-btn cta-btn" href="#">Compre Agora</a>
+  </div>
+</section>
+
+
+<section class="uk-container uk-margin-xlarge-top uk-margin-medium-bottom">
+<div class="uk-flex uk-flex-between@l">
+<div>
+  <h2>Games</h2>
+</div>
+<div>
+  <a class="links">Jogos</a>
+  <a class="links">Controle</a>
+  <a class="links">Acessorios</a>
+</div>
+</div>
+</section>
+<!--JOGOS-->
+
+<section id="jogos" class= "uk-container">
+  <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 2000; pause-on-hover: true;">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-4@s uk-grid">
+            <li class="uk-transition-toggle" tabindex="0">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="img/JOGOS/Call of Duty Black Ops Cold War.jpg" width="1800" height="1200" alt="">
+                    </div >
+                    <div class="uk-flex uk-flex-column uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                    <p>R$ 189,99</p>
+                    <a class="uk-h4 primary-btn cta-btn">Comprar</a>
+                  </div>
+                </div>
+            </li>
+            <li class="uk-transition-toggle" tabindex="0">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="img/JOGOS/Forspoken - Playstation 5.jpg" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-flex uk-flex-column uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                     <p>R$ 199,99</p>
+                      <a class="uk-h4 primary-btn cta-btn">Comprar</a>
+                  </div>
+                </div>
+            </li>
+            <li class="uk-transition-toggle" tabindex="0">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="img/JOGOS/God of War Ragnarök - Edição Standard - PlayStation 5.jpg" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-flex uk-flex-column uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                      <p>R$ 249,99</p>
+                      <a class="uk-h4 primary-btn cta-btn">Comprar</a>
+                  </div>
+                </div>
+            </li>
+            <li class="uk-transition-toggle" tabindex="0">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="img/JOGOS/The Last Of Us Part I - PlayStation 5.jpg" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-flex uk-flex-column uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                      <p>R$ 99,00</p>
+                      <a class="uk-h4 primary-btn cta-btn">Comprar</a>
+                  </div>
+                </div>
+            </li>
+            <li class="uk-transition-toggle" tabindex="0">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="img/JOGOS/The Callisto Protocol – Day One Edition - Playstation 5.jpg" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-flex uk-flex-column uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                      <p>R$ 129,99</p>
+                      <a class="uk-h4 primary-btn cta-btn">Comprar</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+</section> 
+
+  <!-- footer -->
+
+  <footer>
+    <div class="uk-container">
+      <div class="uk-text-center">
+        <h3>SOBRE NÓS</h3>
+        <a><span uk-icon="receiver"></span> (+021) 9999-9999</a>
+        <a><span uk-icon="mail"></span> email@email.com</a>      
+      </div>
+
+      <div class="uk-flex uk-flex-center">
+          <a class="uk-icon-button" uk-icon="facebook"></a>        
+          <a class="uk-icon-button" href="" uk-icon="twitter"></a>        
+          <a class="uk-icon-button" href="" uk-icon="instagram"></a>            
+      </div>
+        <p class="uk-text-center">Copyright © 2023 Todos os direitos reservados TechPY</p>
+    </div>
+
+  </footer>
+
+  </body>
+  </html>
